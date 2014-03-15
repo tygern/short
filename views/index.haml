@@ -1,11 +1,4 @@
-!!! 5
-%html
-  %head
-    %title= "Short"
-    %link{ :href => "style.css", :media => "screen", :rel => "stylesheet" }
-  %body
-    %h1 Hello #{url}
-
-    %form{action: "url", method: "post"}
-      %input{type: "text", name: "url", placeholder: "Enter url to shorten"}
-      %input{type: "submit", value: "Submit"}
+%form{action: "url", method: "post"}
+  .input-wrapper
+    %input{class: "text", type: "text", name: "original_url", value: "http://"}
+    %input{class: "button",type: "submit", value: "shorten"}

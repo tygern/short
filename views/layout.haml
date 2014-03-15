@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title= "Short"
+    %link{ :href => "style.css", :media => "screen", :rel => "stylesheet" }
+  %body
+    %nav
+      .title
+        Short
+      - if user
+        .account
+          .user= user
+          .logout
+            %a{href: "/logout"} logout
+    %main
+      =yield
+      - if notice
+        .notice= notice

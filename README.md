@@ -6,7 +6,7 @@ A simple url shortener
 
 - Set `DATABASE_URL` to your local mysql database.
 
-        export DATABASE_URL = mysql://root:password@localhost/short
+        export DATABASE_URL = postgres://user:password@localhost/short
 
 - Run migrations
 

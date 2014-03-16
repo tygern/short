@@ -1,7 +1,7 @@
 require "data_mapper"
-require "dm-mysql-adapter"
+require "dm-postgres-adapter"
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:@localhost/short')
+DataMapper.setup(:default, ENV['DATABASE_URL'])
 
 class UrlAdapter
   include DataMapper::Resource
